@@ -1638,12 +1638,12 @@ textarea.form-control {
       a {
         color: $white;
       }
-      span {
-      }
+     
     }
   }
   .contact-form {
-    width: 100%;
+  
+    
     .btn-primary {
       @include media-breakpoint-down(sm) {
         display: block;
@@ -1658,11 +1658,11 @@ textarea.form-control {
     box-shadow: none !important;
     font-size: 15px;
   }
-  #map {
-  }
+  
 }
 
-//### .block-21
+
+
 .block-21 {
   .blog-img {
     display: block;
