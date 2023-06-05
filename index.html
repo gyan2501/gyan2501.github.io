@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="css/style.css">
 
 	<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+	
+	<!-- Email JS -->
+	<script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
  
 </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -457,16 +460,84 @@
 		 </div>
 		  	
 			
-			<div>
+			<!-- <div> -->
 
-				<a id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=gyan2501">    <img  alt="gyan2501's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/gyan2501?cardType=github&theme=github-dark&Title=FFBD39&Ring=FFBD39" />  </a>
+				<!-- <a id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=gyan2501">    <img  alt="gyan2501's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/gyan2501?cardType=github&theme=github-dark&Title=FFBD39&Ring=FFBD39" />  </a> -->
 			
-				<a id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=gyan2501"></a>	<img  width="450em" height="400px" src="https://github-readme-streak-stats.herokuapp.com/?user=gyan2501&theme=tokyonight&date_format=j%20M%5B%20Y%5D&border=48484852&currStreakNum=8B949E&sideNums=8B949E&sideLabels=8B949E&dates=8B949E&currStreakLabel=FFBD39FF&background=1E2228&ring=FFBD39FF&fire=FFBD39FF"/>
+				<!-- <a id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=gyan2501"></a>	<img  width="450em" height="400px" src="https://github-readme-streak-stats.herokuapp.com/?user=gyan2501&theme=tokyonight&date_format=j%20M%5B%20Y%5D&border=48484852&currStreakNum=8B949E&sideNums=8B949E&sideLabels=8B949E&dates=8B949E&currStreakLabel=FFBD39FF&background=1E2228&ring=FFBD39FF&fire=FFBD39FF"/> -->
 				
-				<img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gyan2501&theme=tokyonight&bg_color=1E2228&text_color=DCDCDC&border_color=353535&card_width=450px" alt="">
+				<!-- <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gyan2501&theme=tokyonight&bg_color=1E2228&text_color=DCDCDC&border_color=353535&card_width=450px" alt=""> -->
+				
+			<!-- </div> -->
+			<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate" >
+
+					<div class="project-card">
+					
+						<a id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=gyan2501"></a>	<img  style="width: 100%; height: 210px;" src="https://github-readme-streak-stats.herokuapp.com/?user=gyan2501&theme=tokyonight&date_format=j%20M%5B%20Y%5D&border=48484852&currStreakNum=8B949E&sideNums=8B949E&sideLabels=8B949E&dates=8B949E&currStreakLabel=FFBD39FF&background=1E2228&ring=FFBD39FF&fire=FFBD39FF"/>
+					
+				
+				</div>
+
+				</div>
+				<div class="resume-wrap ftco-animate" >
+
+					<div class="project-card">
+					
+						
+
+						<img id="github-top-langs" style="width: 100%;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gyan2501&theme=tokyonight&bg_color=1E2228&text_color=DCDCDC&border_color=353535&card_width=450px" alt="">
+				
+				
+				</div>
+					
+				</div>
+
+				
+
+				
+
 				
 			</div>
 
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate" >
+
+					<div class="project-card">
+					
+						<a id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=gyan2501">    <img style="width: 100%;" alt="gyan2501's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/gyan2501?cardType=github&theme=github-dark&Title=FFBD39&Ring=FFBD39" />  </a>
+
+						<!-- <img id="github-top-langs" style="width: 100%;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gyan2501&theme=tokyonight&bg_color=1E2228&text_color=DCDCDC&border_color=353535&card_width=450px" alt=""> -->
+				
+				
+				</div>
+					
+				</div>
+
+				
+
+				<!-- <div class="resume-wrap ftco-animate" >
+
+					<div class="project-card">
+					
+						
+
+						<img id="github-top-langs" style="width: 100%;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gyan2501&theme=tokyonight&bg_color=1E2228&text_color=DCDCDC&border_color=353535&card_width=450px" alt="">
+				
+				
+				</div>
+					
+				</div> -->
+
+				
+				
+				
+			</div>
+
+			
+		</div>
 		</div>
 	  </section>
 	
@@ -522,18 +593,18 @@
   
 		  <div class="row no-gutters block-9">
 			<div class="col-md-6 order-md-last d-flex">
-			  <form action="#" class="bg-light p-4 p-md-5 contact-form">
+			  <form  class="bg-light p-4 p-md-5 contact-form" id="message-form" >
 				<div class="form-group">
-				  <input type="text" class="form-control" placeholder="Your Name">
+				  <input type="text" id="name" class="form-control" placeholder="Your Name">
 				</div>
 				<div class="form-group">
-				  <input type="text" class="form-control" placeholder="Your Email">
+				  <input type="text" id="sender-email" class="form-control" placeholder="Your Email">
 				</div>
 				<div class="form-group">
-				  <input type="text" class="form-control" placeholder="Subject">
+				  <input type="text" id="subject" class="form-control" placeholder="Subject">
 				</div>
 				<div class="form-group">
-				  <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+				  <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
 				</div>
 				<div class="form-group">
 				  <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
@@ -606,6 +677,49 @@
 		  window.open(link, '_blank');
 		}
 	  </script>
+
+
+<!-- Form handling for sending Email -->
+	  <script>
+
+document.getElementById('message-form').addEventListener('submit', sendEmail);
+
+  function sendEmail(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Collect form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('sender-email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    // Create an object to hold the form data
+    const formData = {
+      name,
+      email,
+      subject,
+      message
+    };
+
+    // Send the form data to the server-side script using fetch
+    fetch('send_email.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => response.text())
+      .then(result => {
+        // Handle the server response
+        alert(result); // Display the server response as an alert
+      })
+      .catch(error => {
+        console.error('Error:', error); // Handle any errors that occurred during the request
+      });
+  }
+	  </script>
 	
+
   </body>
 </html>
